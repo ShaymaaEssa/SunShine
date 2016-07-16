@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="6">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_todaydate"
+            android:text="@string/txt_todaydate"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_maxdegree"
+            android:text="@string/txt_maxdegree"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mindegree"
+            android:text="@string/txt_mindegree"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_weatherdesc"
+            android:text="@string/txt_weatherdesc"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            />
+    </LinearLayout>
+
+</LinearLayout>
